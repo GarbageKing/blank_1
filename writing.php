@@ -30,7 +30,7 @@ $conn->close();
 if($id != '' && $added)
 {
     session_start();
-    $_SESSION["link"] = "http://garbage_cms.dev/auto/reading.php?id=$id"; 
+    $_SESSION["link"] = "$site/reading.php?id=$id"; 
     header('Location: link.php');
 }
 else 
